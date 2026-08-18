@@ -8,7 +8,11 @@
     font-size: 13px;
     padding: 5px;
 }
-
+.forms img {
+    max-width: 400px; /* Ajuste o tamanho máximo conforme necessário */
+    width: 100%;
+    height: auto;
+}
 select.fordform {
     width: 310px;
     height: 36px;
@@ -32,10 +36,25 @@ main div {
 }
 
 .forms {
-    display: block;
+    display:flex;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+.campos{
+    width: 300px;
+}
+.forms p{
+    width:  300px;
+    text-align: justify;
+    margin: 8px;
 }
 
+.check{
+    margin-left: 8px;
+}
 h2 {
     text-align: left;
     font-weight: 800;
