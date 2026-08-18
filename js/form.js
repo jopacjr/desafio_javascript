@@ -9,7 +9,13 @@ class Contato {
     }
 }
 
-function Post(form) {
+function Post(event, form) {
+    if (!form.checkbox1.checked) {
+        event.preventDefault();
+        alert('Você precisa marcar a opção de termos e condições antes de enviar.');
+        return;
+    }
+
     event.preventDefault();
 
     const nome = form.nome.value;
@@ -23,6 +29,6 @@ function Post(form) {
 
     console.log("Dados do Contato Capturados:", objetoContato);
     alert(`Obrigado, ${objetoContato.nome}! Seus dados foram enviados com sucesso.`);
-    
+
     form.reset();
 }

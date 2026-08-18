@@ -39,7 +39,7 @@
             </div>
             <div class="campos">
                 <h2 class="titulo">Sobre Você</h2>
-                <form onsubmit="Post(this);">
+                <form onsubmit="Post(event, this);">
                     <input type="text" name="nome" placeholder="NOME*" class="fordform" required>
                     <input type="text" name="email" placeholder="E-MAIL*" class="fordform" required>
                     <input type="text" name="cpf" placeholder="CPF*" class="fordform" required>
@@ -54,11 +54,11 @@
                         qualquer momento, será possível editar ou remover tais dados. <a title="_blank"
                             href="https://www.ford.com.br/politica-de-privacidade/" >Termos e condições</a> </p>
                     <br>
-                    <input type="checkbox" class="check">
-                    <label for="">Sim. Li e concordo com os Termos e Condições</label>
+                    <input type="checkbox" class="check" id="checkbox1" name="checkbox1" required>
+                    <label for="checkbox1">Sim. Li e concordo com os Termos e Condições</label>
                     <br>
-                    <input type="checkbox" class="check">
-                    <label for="">Sim. Também quero receber descontos e novidades</label>
+                    <input type="checkbox" class="check" id="checkbox2">
+                    <label for="checkbox2">Sim. Também quero receber descontos e novidades</label>
                     <br>
                     <br>
                     <button type="submit">Enviar</button>
